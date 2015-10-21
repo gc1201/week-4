@@ -17,7 +17,7 @@ def index():
 def getData():
 	
 	client = pyorient.OrientDB("localhost", 2424)
-	session_id = client.connect("root", "password")
+	session_id = client.connect("root", "474F1CBE549F9E33FC8A0793C7819485072DAE07A4B704138010F28A28B69DF9")
 	db_name = "soufun"
 	db_username = "admin"
 	db_password = "admin"
@@ -58,4 +58,4 @@ def getData():
 	return json.dumps(output)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=5000,debug=True,threaded=True)
+    app.run(host='0.0.0.0',port=4000,debug=True,threaded=True)
